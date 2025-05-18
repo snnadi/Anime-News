@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anime Reviews – AnimeNews Central</title>
+  <meta name="description" content="User reviews of the latest and greatest anime series. Search and browse community insights here." />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/layout.css" />
+</head>
+<body>
+  <!-- $$$$$$$$ Header and Navigation $$$$$$$$ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="home.html">AnimeNews Central</a>
+      </div>
+      <nav class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="home.html"   class="button-64"><span class="text">Home</span></a></li>
+          <li><a href="news.html"   class="button-64"><span class="text">News</span></a></li>
+          <li><a href="reviews.html" class="button-64"><span class="text">Reviews</span></a></li>
+          <li><a href="help.html"   class="button-64"><span class="text">Help</span></a></li>
+          <li><a href="aboutme.html" class="button-64"><span class="text">About</span></a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <form id="search-form" role="search" aria-label="Search anime reviews">
+          <input id="search-input" type="search" name="q" placeholder="Search reviews…" />
+          <button type="submit" hidden>Search</button>
+        </form>
+        <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌓</button>
+        <a class="signin-btn" href="#">Sign In</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- $$$$$$$$ Content $$$$$$$$ -->
+  <main class="container" role="main">
+    <!-- Page Intro -->
+    <section class="page-intro">
+      <h2>Anime Reviews</h2>
+      <p>Browse reviews to decide what to watch next.</p>
+      <hr />
+    </section>
+
+    <!-- Reviews List -->
+    <section class="review-list">
+      <div id="reviews-container" class="grid">
+      </div>
+      <div class="pagination">
+        <button id="prev-page" disabled aria-label="Previous page">← Previous</button>
+        <button id="next-page" aria-label="Next page">Next →</button>
+      </div>
+    </section>
+
+    <!-- Sidebar: Top Reviewed Anime placeholder -->
+    <aside class="sidebar" role="complementary">
+      <h3>Top Reviewed Anime</h3>
+      <ul id="top-reviewed-list">
+      </ul>
+    </aside>
+  </main>
+
+  <!--  Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2025 AnimeNews Central</p>
+  </footer>
+
+  <!-- $$$$$$$$ Scripts $$$$$$$$ -->
+  <!-- Animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <!-- My main script-->
+  <script src="/scripts/CentralScript.js"></script>
+</body>
+</html>

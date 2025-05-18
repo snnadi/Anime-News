@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anime News – AnimeNews Central</title>
+  <meta name="description" content="Stay up-to-date with the latest anime news from around the world, by your best buddy by AnimeNews Central." />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/layout.css" />
+</head>
+<body>
+  <!-- $$$$$$$$ Header and Navigation $$$$$$$$ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="home.html">AnimeNews Central</a>
+      </div>
+      <nav class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="home.html" class="button-64"><span class="text">Home</span></a></li>
+          <li><a href="news.html"  class="button-64"><span class="text">News</span></a></li>
+          <li><a href="reviews.html" class="button-64"><span class="text">Reviews</span></a></li>
+          <li><a href="help.html"  class="button-64"><span class="text">Help</span></a></li>
+          <li><a href="aboutme.html" class="button-64"><span class="text">About</span></a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <form id="search-form" role="search" aria-label="Search anime news">
+          <input id="search-input" type="search" name="q" placeholder="Search anime…" />
+          <button type="submit" hidden>Search</button>
+        </form>
+        <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌓</button>
+        <a class="signin-btn" href="#">Sign In</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- $$$$$$$$  Content $$$$$$$$ -->
+  <main class="container" role="main">
+    <section class="page-intro">
+      <h2>Anime News</h2>
+      <p>Need to get your anime shot in? Come get your daily dose of anime news here.</p>
+      <hr />
+    </section>
+
+    <!-- Seasonal Slider -->
+    <section class="seasonal-news">
+      <h3>New This Season</h3>
+      <div id="seasonal-slider" class="slider">
+      </div>
+    </section>
+
+    <!-- Latest News Feed -->
+    <section class="news-list">
+      <h3>Latest Anime News</h3>
+      <hr />
+      <div id="news-container" class="grid">
+      </div>
+      <div class="pagination">
+        <button id="prev-page" disabled>← Previous</button>
+        <button id="next-page">Next →</button>
+      </div>
+    </section>
+    <!-- Sidebar: Popular News Placeholder -->
+    <aside class="sidebar" role="complementary">
+      <h3>Popular News</h3>
+      <ul id="popular-list">
+      </ul>
+
+    </aside>
+  </main>
+
+  <!-- $$$$$$$$ Footer $$$$$$$$ -->
+  <footer class="site-footer">
+    <p>&copy; 2025 AnimeNews Central</p>
+  </footer>
+
+  <!-- $$$$$$$$ Scripts $$$$$$$$ -->
+  <!-- Animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <!-- My main script-->
+  <script src="/scripts/CentralScript.js"></script>
+</body>
+</html>

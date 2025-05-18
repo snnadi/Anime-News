@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AnimeNews Central</title>
+  <meta name="description" content="Daily-updated anime news, reviews, and seasonal release info from AnimeNews Central." />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/layout.css" />
+</head>
+<body>
+  <!-- $$$$$$$$ Header and Navigation $$$$$$$$ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="home.html">AnimeNews Central</a>
+      </div>
+      <nav class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="home.html" class="button-64"><span class="text">Home</span></a></li>
+          <li><a href="news.html" class="button-64"><span class="text">News</span></a></li>
+          <li><a href="reviews.html" class="button-64"><span class="text">Reviews</span></a></li>
+          <li><a href="help.html" class="button-64"><span class="text">Help</span></a></li>
+          <li><a href="aboutme.html" class="button-64"><span class="text">About</span></a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <form id="search-form" role="search" aria-label="Search anime news">
+          <input id="search-input" type="search" name="q" placeholder="Search anime…" />
+          <button type="submit" hidden>Search</button>
+        </form>
+        <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌓</button>
+        <a class="signin-btn" href="#">Sign In</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- $$$$$$$$  Content $$$$$$$$ -->
+  <main class="container home-layout" role="main">
+    <!-- Featured News Section -->
+    <section class="featured-news">
+      <h2>Today’s Top Anime News</h2>
+      <div id="featured-container" class="grid">
+      </div>
+    </section>
+
+    <!-- Sidebar: Popular News -->
+    <aside class="sidebar" role="complementary">
+      <h3>Popular News</h3>
+      <ul id="popular-list">
+      </ul>
+    </aside>
+  </main>
+
+  <!-- $$$$$$$$ Ratings Bar $$$$$$$$ -->
+  <section class="ratings-bar container">
+    <h3>Top Rated Anime</h3>
+    <div id="ratings-list" class="ratings-grid">
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 AnimeNews Central</p>
+  </footer>
+
+  <!-- $$$$$$$$ Scripts $$$$$$$$ -->
+  <!-- Animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <!-- My main script-->
+  <script src="/scripts/CentralScript.js"></script>
+</body>
+</html>

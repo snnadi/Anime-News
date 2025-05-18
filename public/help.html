@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Help – AnimeNews Central</title>
+  <meta name="description" content="Submit questions or browse FAQs about AnimeNews Central." />
+  <link rel="stylesheet" href="/layout.css" />
+</head>
+<body>
+  <!-- ||||||||| Header ||||||||| --> 
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo"><a href="home.html">AnimeNews Central</a></div>
+      <nav class="primary-nav">
+        <ul>
+          <li><a href="home.html" class="button-64"><span class="text">Home</span></a></li>
+          <li><a href="news.html"  class="button-64"><span class="text">News</span></a></li>
+          <li><a href="reviews.html" class="button-64"><span class="text">Reviews</span></a></li>
+          <li><a href="help.html"  class="button-64"><span class="text">Help</span></a></li>
+          <li><a href="aboutme.html" class="button-64"><span class="text">About</span></a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <form id="search-form">
+          <input id="search-input" type="search" placeholder="Search…" />
+        </form>
+        <button id="dark-mode-toggle">🌓</button>
+        <a class="signin-btn" href="#">Sign In</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ||||||||| Main Help Layout ||||||||| -->
+  <main class="container help-layout" role="main">
+    <!-- Left FAQs -->
+    <aside>
+      <details>
+        <summary>How do I submit a question?</summary>
+        <p>Fill out the form in the center with your question title, email, and details, then click “Submit”.</p>
+      </details>
+      <details>
+        <summary>Why isn't my email working?</summary>
+        <p>Make sure you entered a valid email address. Follow the preview as a refer for how it should look.</p>
+      </details>
+    </aside>
+
+    <!-- Question Submission Form (React mounts here) -->
+    <section class="help-form-section">
+      <h3>Ask a Question</h3>
+      <div id="question-form-root"></div>
+    </section>
+
+    <!-- Right FAQs -->
+    <aside>
+      <details>
+        <summary>When will my question be answered?</summary>
+        <p>We try our best to reply back to you in 5–7 business days.</p>
+      </details>
+      <details>
+        <summary>How do I change dark mode?</summary>
+        <p>Click the 🌓 button in the header to toggle between light and dark themes.</p>
+      </details>
+    </aside>
+  </main>
+
+  <!-- ||||||||| Footer ||||||||| -->
+  <footer class="site-footer">
+    <p>&copy; 2025 AnimeNews Central</p>
+  </footer>
+
+  <!-- ||||||||| Scripts ||||||||| -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+  <script src="/scripts/CentralScript.js"></script>
+</body>
+</html>
+
