@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderReviews();
   }
   
-  // FAQ widget (Help page)
+  // FAQ widget for the Help page
   function initFAQWidget() {
     const { useState } = React;
   
@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .render(React.createElement(FAQWidget));
   }
   
-  // Question form (Help page)
+  // Question form for the Help page
   function initQuestionForm() {
     const { useState } = React;
   
